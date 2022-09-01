@@ -17,3 +17,5 @@ class Framework(TemplateView):
         return self.template_name
 
 
+class Home(TemplateView):
+    template_name = '01_base/home.html'

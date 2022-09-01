@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: e-marcos.hiroshi@iabs.org.br
+Date: Thu, 01 Sep 2022 18:47:00 -0000
+Message-ID: <166205802041.103892.11074235246356014964@marcos-POS-PIQ77CL>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/Mw/bb35ic-9df91f0f489f97286d86ffd5fd1a518f/
+
+Your username, in case you’ve forgotten: marcos2
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
