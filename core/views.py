@@ -1,5 +1,6 @@
 from django.views.generic import TemplateView
 from django.template import loader
+from accounts.models import *
 
 
 class Framework(TemplateView):
@@ -19,3 +20,10 @@ class Framework(TemplateView):
 
 class Home(TemplateView):
     template_name = '01_base/home.html'
+
+    def get_context_data(self, **kwargs):
+        return dict(
+            super().get_context_data(**kwargs),
+            costumers=PersonModel.objects.count(),
+            employees=EmployeeModel.objects.count()
+        )

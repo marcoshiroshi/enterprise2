@@ -18,27 +18,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include '00_framework/partials/header.html' %}
+{% include '01_base/partials/header.html' %}
 
 <body>
+
+        {% include '01_base/partials/navbar.html' %}
 
         <div class="container-fluid bg-soft">
             <div class="row">
                 <div class="col-12">
 
-                {% include '00_framework/partials/side_menu.html' %}
+                {% include '01_base/partials/side_menu.html' %}
 
 
                     <main class="content">
-                        {% include '00_framework/partials/navbar_main.html' %}
-
-                        {% include '00_framework/partials/footer.html' %}
+                        {% include '01_base/partials/navbar_main.html' %}
+                        {% block main %}
+                        {% endblock main %}
+                        {% include '01_base/partials/footer.html' %}
                     </main>
                 </div>
             </div>
         </div>
 
-{% include '00_framework/partials/all_js.html' %}
+{% include '01_base/partials/all_js.html' %}
 
 {% block java_script %}{% endblock java_script %}
 
