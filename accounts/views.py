@@ -38,6 +38,3 @@ class EmployeeView(CreateView):
     template_name = '01_base/create_employee.html'
     form_class = EmployeeForm
     success_url = reverse_lazy("home")
-
-
-'teste de commit'
